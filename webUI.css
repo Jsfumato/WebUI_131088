@@ -1,0 +1,29 @@
+#global-header {
+    z-index: 100;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #035E7D;
+
+    height: 42px;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+#content ul li{
+    float: left;
+}
+main{
+    position: relative;
+}
+#content{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+#left-sidebar{
+    float: left;
+    height: 100%;
+}
