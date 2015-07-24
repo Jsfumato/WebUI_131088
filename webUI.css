@@ -1,3 +1,26 @@
+.qdqd{
+    border :2px;
+    background-color: aquamarine;
+    opacity: 50%;
+    margin: 20px;
+}
+.dqdq{
+    border :2px;
+    background-color: antiquewhite;
+    opacity: 50%;
+    margin: 10px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li{
+    display: inline;
+    background: rgb(0,136,221);
+}
+
 #global-header {
     z-index: 100;
     
