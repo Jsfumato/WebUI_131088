@@ -63,6 +63,27 @@ nav ul{
     padding: 0;
 }
 
+nav ul div {
+    background: #22313F;
+    height: 50px;
+    
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+nav ul div div {
+    padding: 0 0 0 10px;
+    display: inline-block;
+    width: 50px;
+}
+
+nav ul img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
 nav a{
     padding: 5px;
     padding-left: 20px;
@@ -73,11 +94,11 @@ nav a{
 
 nav a:link, a:visited {
     text-decoration: none;
-    color: white;
+    color: #ECF0F1;
 }
 
 nav a:hover {
-    color: gray;
+    color: #2c3e50;
     background: #F5D76E;
 }
 
@@ -95,8 +116,140 @@ nav a:hover {
     box-shadow: -3px 0 3px;
 }
 
-#container main {    
+#container main {
+    text-align: center;
     padding: 10px;
     padding-left: 100px;
     margin-right: 100px;
+}
+
+section .number {
+    width: 10%;
+    display: inline-block;
+}
+div.q_num {
+    height: 30px;
+    width: 30px;
+    background: #EF4836;
+    text-align: center;
+    line-height: 35px;
+    
+    font-size: 25px;
+    color: white;
+    
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+div.a_num {
+    height: 30px;
+    width: 30px;
+    background: #2c3e50;
+    text-align: center;
+    line-height: 35px;
+
+    font-size: 25px;
+    color: white;
+
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+p{
+    text-indent: 20px;
+}
+
+main > section {
+    text-align: center;
+    box-sizing: border-box;
+    width: 600px;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    margin: auto;
+    margin-bottom: 20px;
+    
+    word-break: keep-all;
+    
+    border-radius: 5px;
+    background: #ecf0f1;
+}
+
+section a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+section a:hover {
+    color: #EF4836;
+}
+
+section a:visited, a:link {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+div.answer::before {
+    content: "";
+    border: 1px inset;
+    box-sizing: border-box;
+    border-color: #ECF0F1;
+    display: block;
+    height: 2px;
+    margin: 0.5em auto;
+}
+
+
+
+section .question, .answer {
+    text-align: left;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+section .Btn_q {
+    display: inline-block;
+    margin: auto;
+    
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid gray;
+    
+    margin-top: 20px;
+}
+
+section .answer {
+    display: none;
+}
+
+#toggle_q1:checked ~ div.answer {
+    display: block;
+}
+#toggle_q2:checked ~ div.answer {
+    display: block;
+}
+#toggle_q3:checked ~ div.answer {
+    display: block;
 }

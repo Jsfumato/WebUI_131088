@@ -1,19 +1,31 @@
-<!doctype html>
+<!--131088 황종성 과제 slider 구현 및 예습-->
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />  
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <title>Slider menu</title>
+    <title>WEBUI_과제제출 page</title>
     <link rel="stylesheet" type="text/css" href="slider.css">
 </head>
     
 <body>
     <nav>
         <ul>
-            <li><a href="#">Menu1</a></li>
-            <li><a href="#">Menu2</a></li>
-            <li><a href="#">Menu3</a></li>
-            <li><a href="#">Menu4</a></li>
+            <li>
+                <div>
+                    <img alt="Hwang JongSung" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xtp1/v/t1.0-1/p160x160/11822426_879277302160356_6808798998617427202_n.jpg?oh=30be5f33646fc60dfd5440ef0565e8d6&oe=56386708&__gda__=1447281348_412ff3bafc2614f865d4cba6007dedd3">
+                    <div>
+                    131088
+                    Hwang JongSung
+                    </div>
+                </div>
+            </li>
+            
+            <li><a href="#">HOME</a></li>
+            <li><a href="#q1">Question 1</a></li>
+            <li><a href="#q2">Question 2</a></li>
+            <li><a href="#q3">Question 3</a></li>
         </ul>
     </nav>
     <input type="checkbox" id="toggle">
@@ -27,34 +39,72 @@
             </div>
         </label>
         <main>
-            <h1>Cascading Style Sheets</h1>
-            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
-            <p>CSS is designed primarily to enable the separation of document content from document presentation, including elements such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content, such as semantically insignificant tables that were widely used to format pages before consistent CSS rendering was available in all major browsers. CSS makes it possible to separate presentation instructions from the HTML content in a separate file or style section of the HTML file. For each matching HTML element, it provides a list of formatting instructions. For example, a CSS rule might specify that "all heading 1 elements should be bold", leaving pure semantic HTML markup that asserts "this text is a level 1 heading" without formatting code such as a &lt;bold&gt; tag indicating how such text should be displayed.</p>
-            <p>This separation of formatting and content makes it possible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (when read out by a speech-based browser or screen reader) and on Braille-based, tactile devices. It can also be used to display the web page differently depending on the screen size or device on which it is being viewed. Although the author of a web page typically links to a CSS file within the markup file, readers can specify a different style sheet, such as a CSS file stored on their own computer, to override the one the author has specified. If the author or the reader did not link the document to a style sheet, the default style of the browser will be applied. Another advantage of CSS is that aesthetic changes to the graphic design of a document (or hundreds of documents) can be applied quickly and easily, by editing a few lines in one file, rather than by a laborious (and thus expensive) process of crawling over every document line by line, changing markup.</p>
-            <p>The CSS specification describes a priority scheme to determine which style rules apply if more than one rule matches against a particular element. In this so-called cascade, priorities (or weights) are calculated and assigned to rules, so that the results are predictable.</p>
-            <p>The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.</p>
-
-        <h2>Syntax</h2>
-            <p>CSS has a simple syntax and uses a number of English keywords to specify the names of various style properties.</p>
-            <p>A style sheet consists of a list of rules. Each rule or rule-set consists of one or more selectors, and a declaration block.</p>
+            <h1>WEB UI 과제</h1>
             
-            <h3>Selector</h3>
-            <p>In CSS, selectors are used to declare which part of the markup a style applies to by matching tags and attributes in the markup itself. Selectors may apply to:
-            <ul>
-                <li>all elements of a specific type, e.g. the second-level headers h2</li>
-                <li>elements specified by attribute, in particular:
-                    <ul>
-                        <li>id: an identifier unique to the document</li>
-                        <li>class: an identifier that groups multiple elements in a document</li>
-                    </ul>
-                </li>
-                <li>elements depending on how they are placed relative to others in the document tree.</li>
-            </ul>
-            </p>
-          <p>Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters and underscores. Any number of instances of any number of elements may have the same class. Conventionally, IDs only apply to one instance of one element.</p>
-          <p>Pseudo-classes are used in CSS selectors to permit formatting based on information that is not contained in the document tree. One example of a widely used pseudo-class is :hover, which identifies content only when the user "points to" the visible element, usually by holding the mouse cursor over it. It is appended to a selector as in a:hover or #elementid:hover. A pseudo-class classifies document elements, such as :link or :visited, whereas a pseudo-element makes a selection that may consist of partial elements, such as :first-line or :first-letter.</p>
-          <p>Selectors may be combined in many ways to achieve great specificity and flexibility.[5] Multiple selectors may be joined in a spaced list to specify elements by location, element type, id, class, or any combination thereof. The order of the selectors is important. For example, div .myClass {color:red;} applies to all elements of class myClass that are inside div elements, whereas .myClass div{color:red;} applies to all div elements that are in elements of class myClass.</p>
-          </main>
+            <section id="q1">
+                <div class="question">
+                    <div class="q_num">Q1</div>
+                    <h2>다음 동영상과 같은 슬라이더 메뉴를 HTML과 CSS만 사용하여 작성하라.</h2>
+                </div>
+                
+                <input type="checkbox" id="toggle_q1">
+                <label for="toggle_q1"><div class="Btn_q"></div></label>
+                
+                <div class="answer">
+                    <div class="a_num">A1</div>
+                    이 페이지
+                </div>
+            </section>
+            
+            <section id="q2">
+                <div class="question">
+                <h2><div class="q_num">Q2</div> 과거 XHTML 규격에서는 
+                    &lt;script> 태그를 사용할 때 다음과 같이 CDATA 섹션을 두기도 했다.
+<pre>
+&lt;script type="text/javascript">
+    //&lt;![CDATA[
+        ...code…
+    //]]>
+&lt;/script>
+</pre>
+                XHTML에서 이렇게 작성해야 했던 이유를 설명하라.</h2>
+                </div>
+            
+                <input type="checkbox" id="toggle_q2">
+                <label for="toggle_q2"><div class="Btn_q"></div></label>
+                
+            <div class="answer">
+                <div class="a_num">A2</div>
+                <p>CDATA 섹션은 엘리먼트나 엔터티에 포함된 문자 데이터를 선언하기 위한 예약어를 말한다. CDATA 섹션의 문자는 XML 프로세서에 의해 파싱되지 않는다. 예를 들면 CDATA 내의 '&lt;' 문자는 마크업 범위 한정자가 아니라 문자로 인식된다.</p>
+                <p>스크립트 부분을 CDATA 속성으로 넣어줌으로써 XHTML 파서가 스크립트 부분에 들어간 html부분을 파싱하지 않도록 막아주는 것이다.</p>
+                <p>//로 주석처리를 하는 이유는 CDATA로 묶어 주는 이 부분이 스크립트 문법에 맞지 않지 때문에 CDATA 섹션을 이해하지 못하는 브라우저에 대비한 것이다.</p>
+            </div>
+            </section>
+        
+            <section id="q3">
+                <div class="question">
+                    <div class="q_num">Q3</div>
+                    <h2><<code>script</code>> 태그의 language 속성은 어느 규격에서 폐지 예정(deprecated) 상태가 되었는지 설명하고, 
+                    참조 문서의 URL도 함께 제출하라.</h2>
+                </div>
+            
+            <input type="checkbox" id="toggle_q3">
+            <label for="toggle_q3"><div class="Btn_q"></div></label>
+            
+                <div class="answer">
+                    <div class="a_num">A3</div>
+                    <p>혹자는 1996년에 deprecated되었다고 합니다. <em>(링크 2 참고)</em></p>
+                    <p>그러나 <a href="http://www.w3.org/TR/tr-date-all">w3.org</a> 에서 모든 document를 날짜별로 정렬해서 뒤져봐도 96년도의 specification은 찾을 수가 없었습니다...</p>
+                    <p><a href="http://www.w3.org/TR/WD-script-960208.html#script-tag">HTML3 Scripting Model - World Wide Web Consortium</a>에서는 아직까진 language 사용 <em>(1996. 2. 8.)</em></p>
+                    <p>W3C Working Draft 97-03-14 <a href="http://www.w3.org/TR/WD-script-970314#script">Client-side Scripting and HTML</a>에서는 deprecated 언급된걸로 보아 해당 문서가 <code>script element</code>의 language attribute가 deprecated됨을 명시한 최초의 스펙이 아닐까 싶습니다.</p>
+                    <em>참고 사이트</em>
+                    <ol>
+                        <li><a href="http://www.w3.org/TR/WD-script-970314#script">http://www.w3.org/TR/WD-script-970314#script</a></li>
+                        <li><a href="http://bytes.com/topic/javascript/answers/647568-language-javascript-deprecated">http://bytes.com/topic/javascript/answers/647568</a></li>
+                    </ol>
+                </div>
+        </section>
+        </main>
     </div>
 </body>
 </html>
