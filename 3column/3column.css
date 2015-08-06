@@ -37,9 +37,11 @@
     font-size: 12px;
 }
 
-#content {
+div#content {
+    overflow: hidden;
+    width: 100% - 155px;
     margin-left: 155px;
-    width: 100%;
+    padding-bottom: 20px;
 }
 
 #main {
@@ -67,4 +69,17 @@
     height: 800px;
     border-radius: 4px;
     margin-top: 20px;
+}
+
+@media (max-width : 1000px){
+    #advertisement{
+        display: none;
+    }
+    #main {
+        width: 100%;
+    }
+    #main div{
+        max-width: 600px;
+        width: 90%;
+    }
 }
